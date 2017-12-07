@@ -11,15 +11,19 @@ package emsamablajecomputadoras.creacional;
  */
 public class SistemaOperativo {
     
-    private String nombre;
-    private int arquitectura;
-    private String version;
+    public String nombre;
+    public int arquitectura;
+    public String version;
 
     public SistemaOperativo(String nombre, int arquitectura, String version) {
         this.nombre = nombre;
         this.arquitectura = arquitectura;
         this.version = version;
     }
+    
+   public SistemaOperativo() {
+	   
+   }
 
     public String getNombre() {
         return nombre;

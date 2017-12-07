@@ -1,11 +1,23 @@
 package emsamablajecomputadoras.creacional;
 
-public interface ConstruirComputador {
-	void ConstruirMarca( );
-	void ConstruirModelo( );
-	void ConstruirRam( );
-	void ConstruirAlmacenamiento( );
-	void ConstruirSO();
-	void ConstruirMainboard( );
-	void ConstruirCooler( );
+public abstract class ConstruirComputador {
+	
+	protected Computador computador;
+	
+	public Computador getComputador() {
+		return computador;
+	}
+	
+	
+	abstract void DefinirComputador();
+	
+	abstract void DefinirAlmacenamiento();
+	
+	abstract void DefinirCoolerExterno();
+	
+	abstract void ConstruirSO();
+	
+	abstract void ConstruirMainboard( );
+	
 }
+

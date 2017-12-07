@@ -9,36 +9,27 @@ package emsamablajecomputadoras.creacional;
  *
  * @author Palacios
  */
-public class Computador {
-    private int ram;
-    private SistemaOperativo os;
-    private int almacenamiento;
-    private Mainboard placa;
-    private String marca;
-    private String modelo;
-    private boolean coolerExterno;
 
-    public Computador(int ram, SistemaOperativo os, int almacenamiento, Mainboard placa, String marca, String modelo) {
-        this.ram = ram;
-        this.os = os;
-        this.almacenamiento = almacenamiento;
-        this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
-    }
+public class Computador {
+    
+    public String marca;
+    public String modelo;
+    
+    public Memoria ram;
+    public Memoria almacenamiento;
+    
+    public boolean coolerExterno;
+    
+    public SistemaOperativo os;
+    
+    public Mainboard placa;
+    
+    
 
     public Computador() {
     }
     
     
-
-    public int getRam() {
-        return ram;
-    }
-
-    public void setRam(int ram) {
-        this.ram = ram;
-    }
 
     public SistemaOperativo getOs() {
         return os;
@@ -48,13 +39,6 @@ public class Computador {
         this.os = os;
     }
 
-    public int getAlmacenamiento() {
-        return almacenamiento;
-    }
-
-    public void setAlmacenamiento(int almacenamiento) {
-        this.almacenamiento = almacenamiento;
-    }
 
     public Mainboard getPlaca() {
         return placa;
@@ -97,8 +81,8 @@ public class Computador {
                +"Modelo : "+modelo+"\n"
                +"Marca: "+marca+"\n"
                +"Mainboard: "+placa+"\n"
-               +"Memoria Ram: "+ram+"\n"
-               +"Disco duro: "+almacenamiento+"\n"
+               +"Memoria Ram: "+ram.capacidad+ " " + ram.tipo+"\n"
+               +"Disco duro: "+almacenamiento.capacidad +" "+ almacenamiento.tipo +"\n"
                +"Sistema Operativo: "+os+"\n" ;
                
     }

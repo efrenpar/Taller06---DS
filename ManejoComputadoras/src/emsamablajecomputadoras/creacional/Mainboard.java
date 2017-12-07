@@ -11,12 +11,16 @@ package emsamablajecomputadoras.creacional;
  */
 public class Mainboard {
     
-    private String modelo;
-    private String numeracion;
+    public String modelo;
+    public String numeracion;
 
     public Mainboard(String modelo, String numeracion) {
         this.modelo = modelo;
         this.numeracion = numeracion;
+    }
+    
+    public Mainboard() {
+    	
     }
 
     public String getModelo() {

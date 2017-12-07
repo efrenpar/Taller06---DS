@@ -1,49 +1,49 @@
 package emsamablajecomputadoras.creacional;
 
-public class AsusRoge implements ConstruirComputador {
+public class AsusRoge extends ConstruirComputador {
 	Computador computador;
 
 	@Override
-	public void ConstruirMarca() {
-		// TODO Auto-generated method stub
-		
+	void DefinirComputador() {
+		computador = new Computador();
+		computador.marca="ASUS";
+		computador.modelo="Roge";
 	}
 
 	@Override
-	public void ConstruirModelo() {
-		// TODO Auto-generated method stub
+	void DefinirAlmacenamiento() {
+		computador.almacenamiento = new Memoria(); 
+		computador.almacenamiento.capacidad = 1000;
+		computador.almacenamiento.tipo="HDD";
 		
+		computador.ram = new Memoria();
+		computador.ram.capacidad=32;
+		computador.ram.tipo="ddr4";
 	}
 
 	@Override
-	public void ConstruirRam( ) {
-		// TODO Auto-generated method stub
-		
+	void DefinirCoolerExterno() {
+		computador.coolerExterno=true;	
 	}
 
 	@Override
-	public void ConstruirAlmacenamiento( ) {
-		// TODO Auto-generated method stub
-		
+	void ConstruirSO() {
+		computador.os=new SistemaOperativo();
+		computador.os.nombre="Windows";
+		computador.os.arquitectura=64;
+		computador.os.version="10 pro";
 	}
 
 	@Override
-	public void ConstruirSO(  ) {
-		// TODO Auto-generated method stub
-		
+	void ConstruirMainboard() {
+		computador.placa = new Mainboard();
+		computador.placa.modelo="Strix";
+		computador.placa.numeracion="x99";
 	}
+	
+	
 
-	@Override
-	public void ConstruirMainboard( ) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void ConstruirCooler( ) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 	
 
 }
