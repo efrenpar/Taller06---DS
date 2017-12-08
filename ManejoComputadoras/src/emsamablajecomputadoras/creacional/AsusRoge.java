@@ -41,9 +41,4 @@ public class AsusRoge extends ConstruirComputador {
 		computador.placa.numeracion="x99";
 	}
 	
-	
-
-	
-	
-
 }
