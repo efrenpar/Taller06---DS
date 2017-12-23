@@ -1,4 +1,4 @@
-package emsamablajecomputadoras.creacional;
+
 
 public class Memoria {
 	int capacidad;
@@ -8,4 +8,8 @@ public class Memoria {
 		
 	}
 
+	public String toString() {
+		return tipo+" "+capacidad;
+		
+	}
 }

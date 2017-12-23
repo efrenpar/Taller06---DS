@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package emsamablajecomputadoras.creacional;
+
 
 /**
  *
  * @author Palacios
  */
 
-public class Computador {
+public class Computador implements ComputerType {
     
     public String marca;
     public String modelo;
@@ -27,6 +27,7 @@ public class Computador {
     
 
     public Computador() {
+    	
     }
     
     

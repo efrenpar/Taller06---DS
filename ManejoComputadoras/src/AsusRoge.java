@@ -1,7 +1,7 @@
-package emsamablajecomputadoras.creacional;
+
 
 public class AsusRoge extends ConstruirComputador {
-	Computador computador;
+	
 
 	@Override
 	void DefinirComputador() {

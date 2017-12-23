@@ -1,8 +1,7 @@
-package emsamablajecomputadoras.creacional;
+
 
 public class AsusZenbook  extends ConstruirComputador{
-	Computador computador;
-
+	
 	@Override
 	void DefinirComputador() {
 		computador = new Computador();
@@ -40,9 +39,9 @@ public class AsusZenbook  extends ConstruirComputador{
 
 	@Override
 	void ConstruirMainboard() {
-		computador.placa = new Mainboard();
-		computador.placa.modelo="Prime";
-		computador.placa.numeracion="Z370";
+		computador.placa = new Mainboard("Prime","Z370");
+		//computador.placa.modelo="Prime";
+		//computador.placa.numeracion="Z370";
 		
 	}
 

@@ -1,4 +1,4 @@
-package emsamablajecomputadoras.creacional;
+
 
 public class FabricaPCs {
 	
@@ -6,12 +6,14 @@ public class FabricaPCs {
 	
 	public void construirPC() {
 		
-		computador.ConstruirMainboard();
-		computador.ConstruirSO();
-		computador.DefinirAlmacenamiento();
+		
+		
+		
 		computador.DefinirComputador();
 		computador.DefinirCoolerExterno();
-		
+		computador.DefinirAlmacenamiento();
+		computador.ConstruirMainboard();
+		computador.ConstruirSO();
 	}
 	
 	public void setConstruirComputador(ConstruirComputador pc) {

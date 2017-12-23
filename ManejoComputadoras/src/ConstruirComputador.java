@@ -1,4 +1,4 @@
-package emsamablajecomputadoras.creacional;
+
 
 public abstract class ConstruirComputador {
 	
